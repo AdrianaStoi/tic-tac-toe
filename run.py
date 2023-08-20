@@ -26,3 +26,34 @@ computer_symbol, user_symbol = players_symbols()
 
 print(f"Computer's symbol is: {computer_symbol}")
 print(f"Your symbol is: {user_symbol}")
+
+board = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+]
+
+
+def generate_board(board):
+    '''
+    Creates the board and displays board number inside the cells. 
+    The cells may be accessed using board[row][column]
+    '''
+    print(f"""\n 
+    +-----+-----+-----+
+    |     |     |     |
+    |{str(board[0][0]).center(5)}|{str(board[0][1]).center(5)}|{str(board[0][2]).center(5)}|
+    |     |     |     |
+    +-----+-----+-----+
+    |     |     |     |
+    |{str(board[1][0]).center(5)}|{str(board[1][1]).center(5)}|{str(board[1][2]).center(5)}|
+    |     |     |     |
+    +-----+-----+-----+
+    |     |     |     |
+    |{str(board[2][0]).center(5)}|{str(board[2][1]).center(5)}|{str(board[2][2]).center(5)}|
+    |     |     |     |
+    +-----+-----+-----+\n
+    """)
+
+generate_board(board)
+
