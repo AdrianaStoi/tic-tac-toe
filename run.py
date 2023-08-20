@@ -1,3 +1,4 @@
+import random
 
 game_instructions = """
 Welcome to Tic-Tac-Toe!
@@ -57,3 +58,12 @@ def generate_board(board):
 
 generate_board(board)
 
+
+def computer_move(board):
+    '''
+    Add computer random choice between 1 and 9.
+    '''
+    return random.randint(1,9)
+
+computer_choice = computer_move(board)
+print("Computer's move:", computer_choice)
