@@ -40,7 +40,7 @@ def generate_board(board):
     Creates the board and displays board number inside the cells. 
     The cells may be accessed using board[row][column]
     '''
-    print(f"""\n 
+    print(f"""\n
     +-----+-----+-----+
     |     |     |     |
     |{str(board[0][0]).center(5)}|{str(board[0][1]).center(5)}|{str(board[0][2]).center(5)}|
@@ -56,14 +56,29 @@ def generate_board(board):
     +-----+-----+-----+\n
     """)
 
+
 generate_board(board)
+
+
+def check_free_cell(board):
+    '''
+    Function that checks if cell is free
+    '''
+    available_cell = []
+    for row in range(len(board)):
+        for column in range(len(board[row])):
+            if board[row][column] not in ["X", "0"]:
+                available_cell.append((row, column))
+
+    return available_cell
 
 
 def computer_move(board):
     '''
-    Add computer random choice between 1 and 9.
+    Adds computer random choice between 1 and 9.
     '''
-    return random.randint(1,9)
+    return random.randint(1, 9)
+
 
 computer_choice = computer_move(board)
 print("Computer's move:", computer_choice)
