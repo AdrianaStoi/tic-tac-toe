@@ -162,15 +162,14 @@ def check_win(board, computer_symbol, user_symbol):
     # Check the winner on diagonals
     if (board[0][0] == board[1][1] == board[2][2]) and (board[0][0] in [computer_symbol, user_symbol]):
         winner = board[0][0]
-    
+
     if (board[0][0] == board[1][1] == board[2][2]) and (board[0][2] in computer_symbol, user_symbol):
         winner = board[0][2]
-    
+  
     # Check for tie if there is no winner and if all cells are filled in.
     if not winner and not check_free_cell(board):
-        print("It's a tie. Play again by clicking on 'Run Program'.")
         winner = "Tie"
-    
+
     return winner
 
 
@@ -182,10 +181,16 @@ while True:
     '''
     winner = computer_move(board)
     if winner:
-        print("Computer won!Play again by clicking on 'Run Program'.")
+        if winner == "Tie":
+            print("It's a tie. Play again by clicking on 'Run Program'.")
+        else:
+            print("Computer won!Play again by clicking on 'Run Program'.")
         break
 
     winner = user_move(board)
     if winner:
-        print("You won!Play again by clicking on 'Run Program'.")
+        if winner == "Tie":
+            print("It's a tie. Play again by clicking on 'Run Program'.")
+        else:
+            print("You won!Play again by clicking on 'Run Program'.")
         break
