@@ -151,7 +151,7 @@ def check_win(board, computer_symbol, user_symbol):
     if (board[0][0] == board[1][1] == board[2][2]) and (board[0][0] in [computer_symbol, user_symbol]):  # noqa
         winner = board[0][0]
 
-    if (board[0][0] == board[1][1] == board[2][2]) and (board[0][2] in computer_symbol, user_symbol):  # noqa
+    if (board[0][2] == board[1][1] == board[2][0]) and (board[0][2] in computer_symbol, user_symbol):  # noqa
         winner = board[0][2]
 
     # Check for tie if there is no winner and if all cells are filled in.
