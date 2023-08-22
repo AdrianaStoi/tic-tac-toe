@@ -14,19 +14,16 @@ Good luck!
 print(game_instructions)
 
 
-def players_symbols():
-    '''
-    Asigns the symbols to the computer and the user
-    '''
-    computer_symbol = "X"
-    user_symbol = "O"
-    return computer_symbol, user_symbol
+'''
+Asigns the symbols to the computer and the user
+'''
+computer_symbol = "X"
+user_symbol = "O"
 
+symbols = computer_symbol, user_symbol
 
-computer_symbol, user_symbol = players_symbols()
-
-print(f"Computer's symbol is: {computer_symbol}")
-print(f"Your symbol is: {user_symbol}")
+print(f"Computer's symbol is: {symbols[0]}")
+print(f"Your symbol is: {symbols[1]}")
 
 board = [
     [1, 2, 3],
@@ -75,13 +72,38 @@ def check_free_cell(board):
 
 def computer_move(board):
     '''
-    Adds computer random choice between 1 and 9.
+    Adds computer random choice between 1 and 9,
+    checks the validity of computer input,
+    checks if cell is available and updates the board.
     '''
-    return random.randint(1, 9)
+    condition = True
+
+    while condition:
+
+        computer_choice = random.randint(1, 9)
+
+        computer_position_board = []
+        for row in range(len(board)):
+            for col in range(len(board[row])):
+                if board[row][col] == computer_choice:
+                    computer_position_board = (row, col)
+                 
+        if computer_position_board not in check_free_cell(board):
+            print(f"Cell {computer_choice} is already filled in, enter a different number.")
+            continue
+
+        else:
+            print("Computer's move:", computer_choice)
+   
+        row, col = computer_position_board
+        board[row][col] = "X"
+        generate_board(board)
+      
+    condition = False
 
 
-computer_choice = computer_move(board)
-print("Computer's move:", computer_choice)
+computer_move(board)
+
 
 
 def user_move(board):
@@ -95,7 +117,7 @@ def user_move(board):
 
     while condition:
         try:
-            user_input = int(input("Enter you move (only numbers between 1-9 accepted:"))
+            user_input = int(input("Enter your move (only numbers between 1-9 accepted:"))
         
         except ValueError:
             print("You must enter a number between 1 and 9!")
@@ -110,7 +132,7 @@ def user_move(board):
             for col in range(len(board[row])):
                 if board[row][col] == user_input:
                     user_position_board = (row, col)
-                    
+                   
         if user_position_board not in check_free_cell(board):
             print(f"Cell {user_input} is already filled in, enter a different number.")
             continue
@@ -118,7 +140,38 @@ def user_move(board):
         row, col = user_position_board
         board[row][col] = "O"
         generate_board(board)
+
     condition = False
 
 
 user_move(board)
+
+
+def check_win(board, computer_symbol, user_symbol):
+    '''
+    Function that checks for winner on rows, columns and diagonals.
+    If there is no winner  and no cells available then winner is "Tie".
+    '''
+    winner = None
+
+    # Check the winner on rows and columns
+    for i in range(3):
+        if (board[i][0] == board[i][1] == board[i][2]) and (board[i][0] in [computer_symbol, user_symbol]):
+            winner = board[i][0]
+        
+        if (board[0][i] == board[1][i] == board[2][i]) and (board[0][i] in [computer_symbol, user_symbol]):
+            winner = board[0][i]
+
+    # Check the winner on diagonals
+    if (board[0][0] == board[1][1] == board[2][2]) and (board[0][0] in [computer_symbol, user_symbol]):
+        winner = board[0][0]
+    
+    if (board[0][0] == board[1][1] == board[2][2]) and (board[0][2] in computer_symbol, user_symbol):
+        winner = board[0][2]
+    
+    # Check for tie if there is no winner and if all cells are filled in.
+    if not winner and not check_free_cell(board):
+        print("It's a tie. Play again by clicking on 'Run Program'.")
+        winner = "Tie"
+    
+    return winner
