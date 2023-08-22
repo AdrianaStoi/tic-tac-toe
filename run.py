@@ -99,11 +99,9 @@ def computer_move(board):
         board[row][col] = "X"
         generate_board(board)
       
-    condition = False
+        condition = False
 
-
-computer_move(board)
-
+    return check_win(board, computer_symbol, user_symbol)
 
 
 def user_move(board):
@@ -141,10 +139,9 @@ def user_move(board):
         board[row][col] = "O"
         generate_board(board)
 
-    condition = False
+        condition = False
 
-
-user_move(board)
+    return check_win(board, computer_symbol, user_symbol)
 
 
 def check_win(board, computer_symbol, user_symbol):
@@ -175,3 +172,20 @@ def check_win(board, computer_symbol, user_symbol):
         winner = "Tie"
     
     return winner
+
+
+while True:
+    '''
+    The loop will break when the winner is determined
+    by the computer_move and user_move functions.
+    Appropriate message is printed is the computer or the user is the winner.
+    '''
+    winner = computer_move(board)
+    if winner:
+        print("Computer won!Play again by clicking on 'Run Program'.")
+        break
+
+    winner = user_move(board)
+    if winner:
+        print("You won!Play again by clicking on 'Run Program'.")
+        break
