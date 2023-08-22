@@ -13,10 +13,6 @@ Good luck!
 """
 print(game_instructions)
 
-
-'''
-Asigns the symbols to the computer and the user
-'''
 computer_symbol = "X"
 user_symbol = "O"
 
@@ -24,6 +20,7 @@ symbols = computer_symbol, user_symbol
 
 print(f"Computer's symbol is: {symbols[0]}")
 print(f"Your symbol is: {symbols[1]}")
+
 
 board = [
     [1, 2, 3],
@@ -35,23 +32,14 @@ board = [
 def generate_board(board):
     '''
     Creates the board and displays board number inside the cells.
-    The cells may be accessed using board[row][column]
     '''
-    print(f"""\n
-    +-----+-----+-----+
-    |     |     |     |
-    |{str(board[0][0]).center(5)}|{str(board[0][1]).center(5)}|{str(board[0][2]).center(5)}|
-    |     |     |     |
-    +-----+-----+-----+
-    |     |     |     |
-    |{str(board[1][0]).center(5)}|{str(board[1][1]).center(5)}|{str(board[1][2]).center(5)}|
-    |     |     |     |
-    +-----+-----+-----+
-    |     |     |     |
-    |{str(board[2][0]).center(5)}|{str(board[2][1]).center(5)}|{str(board[2][2]).center(5)}|
-    |     |     |     |
-    +-----+-----+-----+\n
-    """)
+    print("\n" + "+-----" * len(board[0]) + "+")
+    for row in board:
+        print("|     " * 3, "|", sep="")
+        print("|" + "|".join(f"{str(cell).center(5)}" for cell in row) + "|")
+        print("|     " * 3, "|", sep="")
+        print("+" + "+".join("-----" for _ in row) + "+")
+    print()
 
 
 generate_board(board)
@@ -59,7 +47,7 @@ generate_board(board)
 
 def check_free_cell(board):
     '''
-    Function that checks if cell is free
+    Function that checks if cell is free.
     '''
     available_cell = []
     for row in range(len(board)):
