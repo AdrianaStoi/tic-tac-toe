@@ -103,6 +103,23 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ### Technology
 
-* I used Lucidchart Flowcharts to create and plan the game functionalities. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowcharts_tic_tac_toe.pdf).
+* I used [Lucidchart](https://www.lucidchart.com/pages/) Flowcharts to create and plan the game structure. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowcharts_tic_tac_toe.pdf).
+
+![Lucid Flowchart-Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/flowchart_tic_tac_toe.png)
+
 * I used the editor Codeanywhere for coding. I used Code Institute template. Skillset used for the project was Python. 
 * The game was deployed to Heroku and deployment history was maintained through Git commit messages.
+
+### Testing
+
+#### Fixed Bugs
+
+* User was asked only once to enter input. The while loop would only go once and not continue the game.
+* The problem was the indentation of “condition= False”. Fixed indentation for “condition = False”, as per below: 
+
+![Bug asking for user input only once]() ![Fixed bug indentation of condition false]()
+
+* When it was a tie there were two messages displayed “It’s a tie” and “Computer won”. 
+* Fixed bug by adding an “if/else” condition under the while loop when there is a winner, as per below:
+
+![Bug two messages appear when tie]() ![solved bug tie one message displayed]()
