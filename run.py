@@ -96,7 +96,7 @@ def user_move(board):
     checks the validity of user input,
     checks if cell is available and updates the board.
     '''
-    print("*** User's turn ***")
+    print("*** Your turn ***")
     condition = True
 
     while condition:
