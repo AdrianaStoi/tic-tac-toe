@@ -73,4 +73,24 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ![Cell already filled-user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/cell_already_filled_in.png)
 
-![Cell already filled-computer]()
+![Cell already filled-computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/cell_already_filled_in_computer.png)
+
+#### Winner or Tie
+
+* If it’s a win for one of the players, there will be a message displayed: “Computer won! Play again by clicking on ‘Run Program.’ or “You won! Play again by clicking on ‘Run Program.’
+
+##### Winner computer
+
+![winner computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_computer.png)
+
+##### Winner user
+
+![winner user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_user.png)
+
+##### Tie
+
+* When it’s a tie meaning all squares on the grid are filled and no player has formed a winning line, the user will see the message: “It’s a tie! Play again by clicking on ‘Run Program.’:”
+
+![tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_tie.png)
+
+* The user can start a new game by clicking on ‘Run program’. The user is informed that they can start a new game by clicking on ‘Run Program’ when there is a winner or it’s a tie, as per the screenshots above.
