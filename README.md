@@ -54,3 +54,23 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * The board is being updated with each move. The user can see on the board the options available.
 
 ![Updated board](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/board_updated.png)
+
+#### Invalid input
+
+* If the user enters invalid data, e.g. integers greater than 9, they will be prompted with a message “Invalid input. Enter a number between 1-9.”
+
+![Invalid input for number lesser than 1 and greater than 9](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input.png)
+
+* If the user enters letters, other characters, floats, they will be prompted with a message “You must enter a number between 1-9!” and he is asked to enter the move:
+
+![Invalid input - characters](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_characters.png)
+
+![Invalid input - letters](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_letters.png)
+
+![Invalid input - floats](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_floats.png)
+
+* When the user or computer enters a number in a cell that has been already occupied, they will be prompted with a message “This cell is already filled, enter a different number.”
+
+![Cell already filled-user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/cell_already_filled_in.png)
+
+![Cell already filled-computer]()
