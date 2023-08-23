@@ -109,7 +109,7 @@ def user_move(board):
             continue
 
         if user_input not in range(1, 10):
-            print("Invalid input. Enter a number between 1 and 9")
+            print("Invalid input. Enter a number between 1 and 9.")
             continue
 
         user_position_board = []

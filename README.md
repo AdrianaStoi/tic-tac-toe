@@ -8,3 +8,19 @@ Otherwise, when all cells on the grid are filled and no player has formed a winn
 
 Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.com/
 
+![Responsive]()
+
+## Site owner's goal:
+
+* Provide an entertaining and user-friendly game to the user. Create a game that provides good user experience by applying defensive programming.
+
+## External user’s goal:
+
+* The user’s goal is to enjoy playing Tic Tac Toe and improve strategic thinking and decision-making skills.
+
+## User stories:
+
+* As a user, I would like to know the rules of the game.
+* As a user, I would like to view updated board and see the available moves. 
+* As a user, I would like to see a message displayed, if I enter wrong character.
+* As a user, I would like to know how to restart game when it is ended.
