@@ -8,7 +8,7 @@ Otherwise, when all cells on the grid are filled and no player has formed a winn
 
 Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.com/
 
-![Responsive]()
+![Responsive](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/tic_tac_toe_responsive.png)
 
 ## Site owner's goal:
 
@@ -115,11 +115,19 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 #### Fixed Bugs
 
 * User was asked only once to enter input. The while loop would only go once and not continue the game.
-* The problem was the indentation of “condition= False”. Fixed indentation for “condition = False”, as per below: 
+* The problem was the indentation of “condition= False”. Fixed indentation for “condition = False”, as per below:
 
-![Bug asking for user input only once]() ![Fixed bug indentation of condition false]()
+![Bug asking for user input only once](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_asking_for_user_input_only_once.png) ![Fixed bug indentation of condition false](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/fixed_bug_indentation_of_condition_false.png)
 
-* When it was a tie there were two messages displayed “It’s a tie” and “Computer won”. 
+* When it was a tie there were two messages displayed “It’s a tie” and “Computer won”.
 * Fixed bug by adding an “if/else” condition under the while loop when there is a winner, as per below:
 
-![Bug two messages appear when tie]() ![solved bug tie one message displayed]()
+![Bug two messages appear when tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_two_messages_appear_when_tie.png) ![Solved bug tie one message displayed](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/solved_bug_tie_one_message_displayed.png)
+
+## Browser Compatibility
+
+* I tested the site on different browsers Google Chrome, Edge and Mozilla. The game functions worked properly on all tested browsers.
+
+## Code validation
+
+* The run.py file successfully passed through the [PEP8]( https://pep8ci.herokuapp.com/#) official validator without any errors being detected.
