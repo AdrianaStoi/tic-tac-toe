@@ -1,32 +1,10 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+# Tic-Tac-Toe
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+Welcome to Tic Tac Toe ! 
 
-## Reminders
+Tic-tac-toe, known as noughts and crosses or Xs and Os, is a game designed for two players. They alternate turns to place their designated X or O marks within a 3x3 grid board game. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+Otherwise, when all cells on the grid are filled and no player has formed a winning line, nobody wins, it is a draw.  
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.com/
 
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
