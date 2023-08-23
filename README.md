@@ -101,7 +101,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * Let the user choose the symbol they want.
 * Keep score tracking for multiple rounds.
 
-### Technology
+## Technology
 
 * I used [Lucidchart](https://www.lucidchart.com/pages/) Flowcharts to create and plan the game structure. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowcharts_tic_tac_toe.pdf).
 
@@ -110,24 +110,52 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * I used the editor Codeanywhere for coding. I used Code Institute template. Skillset used for the project was Python. 
 * The game was deployed to Heroku and deployment history was maintained through Git commit messages.
 
-### Testing
+## Testing
 
-#### Fixed Bugs
+### Fixed Bugs
 
 * User was asked only once to enter input. The while loop would only go once and not continue the game.
 * The problem was the indentation of “condition= False”. Fixed indentation for “condition = False”, as per below:
 
-![Bug asking for user input only once](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_asking_for_user_input_only_once.png) ![Fixed bug indentation of condition false](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/fixed_bug_indentation_of_condition_false.png)
+![Bug asking for user input only once](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_asking_for_user_input_only_once.png)  ![Fixed bug indentation of condition false](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/fixed_bug_indentation_of_condition_false.png)
 
 * When it was a tie there were two messages displayed “It’s a tie” and “Computer won”.
 * Fixed bug by adding an “if/else” condition under the while loop when there is a winner, as per below:
 
-![Bug two messages appear when tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_two_messages_appear_when_tie.png) ![Solved bug tie one message displayed](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/solved_bug_tie_one_message_displayed.png)
+![Bug two messages appear when tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_two_messages_appear_when_tie.png)  ![Solved bug tie one message displayed](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/solved_bug_tie_one_message_displayed.png)
 
-## Browser Compatibility
+### Browser Compatibility
 
 * I tested the site on different browsers Google Chrome, Edge and Mozilla. The game functions worked properly on all tested browsers.
 
-## Code validation
+### Lighthouse
 
-* The run.py file successfully passed through the [PEP8]( https://pep8ci.herokuapp.com/#) official validator without any errors being detected.
+* I tested performance, accessibility, best practice, and SEO using Lighthouse accessed via DevTools and here are the results:
+
+![Lighthouse screenshot](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/lighthouse_tic_tac_toe.png)
+
+### Code validation
+
+* The run.py file successfully passed through the [PEP8](https://pep8ci.herokuapp.com/#) official validator without any errors being detected.
+
+## Deployment
+
+To deploy the project on Heroku the following steps were followed: 
+
+* Log into [Heroku](https://heroku.com/) account 
+* From the Heroku dashboard click on “New” on the upper right corner and then click on “Create new app”
+* Add app name (app name must be unique on Heroku)
+* Then select the appropriate region e.g. “Europe” and then click on “Create app”
+* Go to “Settings tab”
+* Go to Config Vars and under KEY type PORT and under Value type 8000
+* Then go to to “Buildpacks” section located after the “Confirg Vars” section, making sure the two packages are added in this order:
+    * Click on “Add Buildpack”, then select “heroku/python” and click on “Add Buildpack”
+    * Then select “heroku/nodejs” and click on “Add Buildpack” 
+* Next go to “Deploy” tab located at the top of the page
+* Under “Deployment method” section, select Github here, and then confirm connection to Github 
+* Search for the corresponding Github repository name, e.g. tic-tac-toe and click “Search” 
+* Click on “Connect” to link up the Heroku app to the GitHub repository code
+* Scroll down on the page, and there are two deployment options in this section: “Automatic deploys” and “Manual deploy”
+* Under “Manual deploy”, click on “Deploy Branch”
+* Once is deployed there is a message displayed “Your app was successfully deployed.” And a button “View” 
+* Click on “View” and you are directed to the app deployed and the link
