@@ -33,12 +33,24 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 * At the top of the page the user can find the “Run program” button which runs the application. 
 
-![Run Program]()
+![Run Program](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/run_program_button.png)
 
 * Once the user clicks on “Run program”, they can see “Welcome to Tic Tac Toe !” and  the instructions on “Here’s how you can play the game”:
 
-![Game instructions]()
+![Game instructions](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/game_instructions.png)
 
-* The Computer has the “X” symbol assigned and the user gets the “O” symbol assigned.
+* The computer has the “X” symbol assigned and the user gets the “O” symbol assigned.
 
-![Game symbols]()
+![Game symbols](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/symbols_assigned.png)
+
+* Underneath the game rules the board is displayed. The computer makes the first move. Computer will add a random move within the range 1-9.
+
+![Computer move](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/computer_move.png)
+
+* At the bottom of the game board the user is asked “Enter your move (only numbers between 1-9 accepted):”
+
+![User move](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/user_turn_message.png)
+
+* The board is being updated with each move. The user can see on the board the options available.
+
+![Updated board](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/board_updated.png)
