@@ -24,3 +24,21 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * As a user, I would like to view updated board and see the available moves. 
 * As a user, I would like to see a message displayed, if I enter wrong character.
 * As a user, I would like to know how to restart game when it is ended.
+
+## Features
+
+### Existing Features
+
+#### Run Program
+
+* At the top of the page the user can find the “Run program” button which runs the application. 
+
+![Run Program]()
+
+* Once the user clicks on “Run program”, they can see “Welcome to Tic Tac Toe !” and  the instructions on “Here’s how you can play the game”:
+
+![Game instructions]()
+
+* The Computer has the “X” symbol assigned and the user gets the “O” symbol assigned.
+
+![Game symbols]()
