@@ -94,3 +94,15 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 ![tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_tie.png)
 
 * The user can start a new game by clicking on ‘Run program’. The user is informed that they can start a new game by clicking on ‘Run Program’ when there is a winner or it’s a tie, as per the screenshots above.
+
+### Future features:
+
+* Provide the option to choose different board sizes.
+* Let the user choose the symbol they want.
+* Keep score tracking for multiple rounds.
+
+### Technology
+
+* I used Lucidchart Flowcharts to create and plan the game functionalities. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowcharts_tic_tac_toe.pdf).
+* I used the editor Codeanywhere for coding. I used Code Institute template. Skillset used for the project was Python. 
+* The game was deployed to Heroku and deployment history was maintained through Git commit messages.
