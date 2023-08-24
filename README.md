@@ -128,17 +128,27 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 * I tested the site on different browsers Google Chrome, Edge and Mozilla. The game functions worked properly on all tested browsers.
 
-### Lighthouse
-
-* I tested performance, accessibility, best practice, and SEO using Lighthouse accessed via DevTools and here are the results:
-
-![Lighthouse screenshot](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/lighthouse_tic_tac_toe.png)
-
 ### Code validation
 
-* The run.py file successfully passed through the [PEP8](https://pep8ci.herokuapp.com/#) official validator without any errors being detected.
+* The run.py file successfully passed through the [PEP8 CI](https://pep8ci.herokuapp.com/#) validator without any errors being detected.
+
+![PEP8 validator](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/code_validation_tic_tac_toe.png)
 
 ## Deployment
+
+### Codeanywhere
+
+* I used Codenywhere to create and run the project. Here are the steps to create the workspace and run the project:
+  * Log in to Codeanywhere using GitHub account: https://app.codeanywhere.com/
+  * On the Dashboard, click on “New Workspace” which can be found under “Workspaces” section.
+  * Copy and paste the Repository URL created in GitHub (by using the Code Institute p3-template) into the designated field.
+  * Click on Create.
+  * New Workspace is created in Codeanywhere.
+  * To run and view the project written in Codeanywhere, click on “Terminal” in the upper bar, then select “New Terminal”.
+  * The New terminal will open at the bottom part of the page. To run the application, type “python3 run.py” in the terminal.
+  * The preview application will run in the terminal in Codeanywhere.
+
+### Heroku
 
 To deploy the project on Heroku the following steps were followed: 
 
