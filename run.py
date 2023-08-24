@@ -52,7 +52,7 @@ def start_game():
         if start_input == 's':
             break
         elif start_input == 'q':
-            print("Quitting game. Click on 'Run Program' to play the game.")
+            print("Quitting game. Click on 'Run Program' to restart the game.")
             quit_game()
             break
         else:

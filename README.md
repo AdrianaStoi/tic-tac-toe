@@ -20,6 +20,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ## User stories:
 
+* As user, I would like to be able to start or quit the game. 
 * As a user, I would like to know the rules of the game.
 * As a user, I would like to view updated board and see the available moves. 
 * As a user, I would like to see a message displayed, if I enter wrong character.
@@ -111,6 +112,16 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * The game was deployed to Heroku and deployment history was maintained through Git commit messages.
 
 ## Testing
+
+### User Story Testing
+
+|                User Story                            |                                            Testing                                                         |
+|------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|As a user, I would like to know the rules of the game.| <ul><li>The game rules are displayed in the terminal, when the user clicks on the Heroku app link or when he clicks on “Run Program”.</li></ul>|
+|As user, I would like to be able to start or quit the game.| <ul><li>After the game rules, the user is being asked to type either ‘s’ to start the game or ‘q’ to quit the game.</li></ul>|
+|As a user, I would like to view updated board and see the available moves.| <ul><li>The game board is updated after each user and computer move. The board is displayed in the terminal. The numbers from 1-9 are displayed. When the user or computer enters a move the numbers are replaced with “X” and “O”.</li></ul>|
+|As a user, I would like to see a message displayed, if I enter wrong character.| <ul><li>The user is prompted with a message every time they enter an invalid input, e.g. letters, special characters, integers less than 1 or greater than 9.</li></ul>|
+|As a user, I would like to know how to restart game when it is ended.| <ul><li>When the game ends, meaning the user wins, computer or when is a tie, the user is prompted with the message: “Play again by clicking on ‘Run Program.'”</li></ul>|
 
 ### Fixed Bugs
 
