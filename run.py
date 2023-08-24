@@ -15,12 +15,9 @@ print(game_instructions)
 
 computer_symbol = "X"
 user_symbol = "O"
-
 symbols = computer_symbol, user_symbol
-
 print(f"Computer's symbol is: {symbols[0]}")
 print(f"Your symbol is: {symbols[1]}")
-
 
 board = [
     [1, 2, 3],
@@ -76,8 +73,8 @@ def computer_move(board):
                 if board[row][col] == computer_choice:
                     computer_position_board = (row, col)
         if computer_position_board not in check_free_cell(board):
-            print(f"Cell {computer_choice} is already filled in,\
-enter a different number.")
+            print(f"Cell {computer_choice} is already filled in,", end=" ")
+            print("enter a different number.")
             continue
 
         else:
@@ -101,9 +98,9 @@ def user_move(board):
 
     while condition:
         try:
-            user_input = int(input("Enter your move\
-(only numbers between 1-9 accepted:"))
-
+            print("Enter your move", end=" ")
+            print("(only numbers between 1-9 accepted:)", end=" ")
+            user_input = int(input())
         except ValueError:
             print("You must enter a number between 1 and 9!")
             continue
@@ -119,14 +116,12 @@ def user_move(board):
                     user_position_board = (row, col)
 
         if user_position_board not in check_free_cell(board):
-            print(f"Cell {user_input} is already filled in,\
-enter a different number.")
+            print(f"Cell {user_input} is already filled in,", end=" ")
+            print("enter a different number.")
             continue
-
         row, col = user_position_board
         board[row][col] = "O"
         generate_board(board)
-
         condition = False
 
     return check_win(board, computer_symbol, user_symbol)
@@ -135,7 +130,7 @@ enter a different number.")
 def check_win(board, computer_symbol, user_symbol):
     '''
     Function that checks for winner on rows, columns and diagonals.
-    If there is no winner  and no cells available then winner is "Tie".
+    If there is no winner and no cells available then winner is "Tie".
     '''
     winner = None
 
@@ -143,14 +138,12 @@ def check_win(board, computer_symbol, user_symbol):
     for i in range(3):
         if (board[i][0] == board[i][1] == board[i][2]) and (board[i][0] in [computer_symbol, user_symbol]):  # noqa
             winner = board[i][0]
-
         if (board[0][i] == board[1][i] == board[2][i]) and (board[0][i] in [computer_symbol, user_symbol]):  # noqa
             winner = board[0][i]
 
     # Check the winner on diagonals
     if (board[0][0] == board[1][1] == board[2][2]) and (board[0][0] in [computer_symbol, user_symbol]):  # noqa
         winner = board[0][0]
-
     if (board[0][2] == board[1][1] == board[2][0]) and (board[0][2] in computer_symbol, user_symbol):  # noqa
         winner = board[0][2]
 
@@ -174,7 +167,6 @@ while True:
         else:
             print("Computer won!Play again by clicking on 'Run Program'.")
         break
-
     winner = user_move(board)
     if winner:
         if winner == "Tie":
