@@ -93,6 +93,8 @@ def computer_move(board):
     checks the validity of computer input,
     checks if cell is available and updates the board.
     '''
+    print()
+    print("*** Computer's turn ***")
     condition = True
     while condition:
         computer_choice = random.randint(1, 9)
@@ -189,7 +191,6 @@ def main():
         [4, 5, 6],
         [7, 8, 9],
     ]
-    generate_board(board)
     while True:
         '''
         The loop will break when the winner is determined.
