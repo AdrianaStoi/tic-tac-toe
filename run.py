@@ -15,9 +15,6 @@ def clear_screen():
         os.system('cls')
 
 
-clear_screen()
-
-
 def quit_game():
     '''Function that exists the game.'''
     sys.exit(0)
@@ -42,12 +39,10 @@ def display_instructions():
     print(GAME_INSTRUCTIONS)
 
 
-display_instructions()
-
-
 def start_game():
     '''
-    Function that prompts the user to tpe 's' to start the game.
+    Function that prompts the user to type 's' to start the game
+    or 'q' to quit the game.
     It checks data validity, otherwise error message received.
     '''
 
@@ -65,20 +60,9 @@ def start_game():
     clear_screen()
 
 
-start_game()
-
-
 computer_symbol = "X"
 user_symbol = "O"
 symbols = computer_symbol, user_symbol
-print(f"Computer's symbol is: {symbols[0]}")
-print(f"Your symbol is: {symbols[1]}")
-
-board = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-]
 
 
 def generate_board(board):
@@ -90,9 +74,6 @@ def generate_board(board):
         print("|     " * 3, "|", sep="")
         print("+" + "+".join("-----" for _ in row) + "+")
     print()
-
-
-generate_board(board)
 
 
 def check_free_cell(board):
@@ -196,25 +177,42 @@ def check_win(board, computer_symbol, user_symbol):
     return winner
 
 
-while True:
-    '''
-    The loop will break when the winner is determined.
-    It alternates between the computer_move and user_move
-    and checks for the winner or tie after each move.
-    Appropriate message is printed if the computer, user is the winner
-    or it's tie.
-    '''
-    winner = computer_move(board)
-    if winner:
-        if winner == "Tie":
-            print("It's a tie. Play again by clicking on 'Run Program'.")
-        else:
-            print("Computer won!Play again by clicking on 'Run Program'.")
-        break
-    winner = user_move(board)
-    if winner:
-        if winner == "Tie":
-            print("It's a tie. Play again by clicking on 'Run Program'.")
-        else:
-            print("You won!Play again by clicking on 'Run Program'.")
-        break
+def main():
+    '''Function that initiates the program"s execution.'''
+    clear_screen()
+    display_instructions()
+    start_game()
+    print(f"Computer's symbol is: {symbols[0]}")
+    print(f"Your symbol is: {symbols[1]}")
+    board = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+    ]
+    generate_board(board)
+    while True:
+        '''
+        The loop will break when the winner is determined.
+        It alternates between the computer_move and user_move
+        and checks for the winner or tie after each move.
+        Appropriate message is printed if the computer, user is the winner
+        or it's tie.
+        '''
+        winner = computer_move(board)
+        if winner:
+            if winner == "Tie":
+                print("It's a tie. Play again by clicking on 'Run Program'.")
+            else:
+                print("Computer won!Play again by clicking on 'Run Program'.")
+            break
+        winner = user_move(board)
+        if winner:
+            if winner == "Tie":
+                print("It's a tie. Play again by clicking on 'Run Program'.")
+            else:
+                print("You won!Play again by clicking on 'Run Program'.")
+            break
+
+
+if __name__ == "__main__":
+    main()
