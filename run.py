@@ -1,8 +1,14 @@
 import random
 import os
+import sys
 
 
 def clear_screen():
+    '''
+    Function that clears the screen.
+    This code was taken from :
+    https://www.scaler.com/topics/how-to-clear-screen-in-python/
+    '''
     if (os.name == 'posix'):
         os.system('clear')
     else:
@@ -12,20 +18,27 @@ def clear_screen():
 clear_screen()
 
 
+def quit_game():
+    '''Function that exists the game.'''
+    sys.exit(0)
+
+
 GAME_INSTRUCTIONS = """
-    Welcome to Tic-Tac-Toe!
-    Here's how you can play the game :
-    o	The game is played on a 3x3 game board.
-    o	The goal of the game is to form a line of three of your own marks
-        horizontally, vertically, or diagonally before the other player.
-    o	You play the game against the computer.
-    o	The computer plays using “X”s.
-    o	You play the game using “O”s.
-    Good luck!
-    """
+Welcome to Tic-Tac-Toe!
+Here's how you can play the game :
+o	The game is played on a 3x3 game board.
+o	The goal of the game is to form a line of three of your own marks
+    horizontally, vertically, or diagonally before the other player.
+o	You play the game against the computer.
+o	The computer plays using “X”s.
+o	You play the game using “O”s.
+o   If you want to restart game click on "Run Program".
+Good luck!
+"""
 
 
 def display_instructions():
+    '''Function that prints the game instructions.'''
     print(GAME_INSTRUCTIONS)
 
 
@@ -33,13 +46,22 @@ display_instructions()
 
 
 def start_game():
+    '''
+    Function that prompts the user to tpe 's' to start the game.
+    It checks data validity, otherwise error message received.
+    '''
+
     while True:
-        print("Type 's' to start game.")
+        print("Type 's' to start game or 'q' to quit the game.")
         start_input = input()
         if start_input == 's':
             break
+        elif start_input == 'q':
+            print("Quitting game.")
+            quit_game()
+            break
         else:
-            print("Invalid input. Enter 's' to start the game.")
+            print("Invalid input. Enter 's' to start the game or 'q' to quit.")
     clear_screen()
 
 
@@ -150,7 +172,7 @@ def check_win(board, computer_symbol, user_symbol):
     '''
     Function that checks for winner on rows, columns and diagonals.
     For loop with if statements checks winner on row and columns.
-    Following 2 if statements outside loop checks winner on diagonals
+    The following 2 if statements outside loop checks winner on diagonals
     Last if statement, if there is no winner and no cells available,
     then winner is "Tie".
     '''
@@ -176,9 +198,11 @@ def check_win(board, computer_symbol, user_symbol):
 
 while True:
     '''
-    The loop will break when the winner is determined
-    by the computer_move and user_move functions.
-    Appropriate message is printed is the computer or the user is the winner.
+    The loop will break when the winner is determined.
+    It alternates between the computer_move and user_move
+    and checks for the winner or tie after each move.
+    Appropriate message is printed if the computer, user is the winner
+    or it's tie.
     '''
     winner = computer_move(board)
     if winner:
