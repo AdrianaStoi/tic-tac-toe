@@ -40,23 +40,33 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ![Game instructions](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/game_instructions.png)
 
-* The computer has the “X” symbol assigned and the user gets the “O” symbol assigned.
+* After the game rules section, the user is being asked : "Type either ‘s’ to start the game or ‘q’ to quit the game."
 
-![Game symbols](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/symbols_assigned.png)
+    * Typing 's' 
 
-* Underneath the game rules the board is displayed. The computer makes the first move. Computer will add a random move within the range 1-9.
+        * If the user types 's' the screen is cleared, the game rules are removed. 
+        * However, the user is again informed about the symbols assigned. The computer has the “X” symbol assigned and the user gets the “O” symbol assigned.
+        * Then the computer will add the first random move within the range 1-9, and the board is updated, as per the screenshot below. 
 
-![Computer move](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/computer_move.png)
+    ![Start game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/type_s.png)
+
+    * Typing 'q'
+
+        * When the user types 'q' the are prompted with the message :"Quitting game. Click on 'Run Program' to restart the game."
+
+![Quit game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/type_q.png)
 
 * At the bottom of the game board the user is asked “Enter your move (only numbers between 1-9 accepted):”
 
 ![User move](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/user_turn_message.png)
 
-* The board is being updated with each move. The user can see on the board the options available.
+* The board is being updated with each valid move. The user can see on the board the options available.
 
 ![Updated board](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/board_updated.png)
 
 #### Invalid input
+
+* If the user enters invalid data when he is asked "Type either ‘s’ to start the game or ‘q’ to quit the game.", they will be prompted with a message “Invalid input.Enter 's' to start the game or 'q' to quit."
 
 * If the user enters invalid data, e.g. integers greater than 9, they will be prompted with a message “Invalid input. Enter a number between 1-9.”
 

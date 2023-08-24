@@ -47,8 +47,8 @@ def start_game():
     '''
 
     while True:
-        print("Type 's' to start game or 'q' to quit the game.")
-        start_input = input()
+        print()
+        start_input = input("Type 's' to start game or 'q' to quit the game:")
         if start_input == 's':
             break
         elif start_input == 'q':
