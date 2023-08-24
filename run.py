@@ -1,17 +1,50 @@
 import random
+import os
 
-game_instructions = """
-Welcome to Tic-Tac-Toe!
-Here’s how you can play the game :
-o	The game is played on a 3x3 game board.
-o	The goal of the game is to form a line of three of your own marks
-    horizontally, vertically, or diagonally before the other player.
-o	You play the game against the computer.
-o	The computer plays using “X”s.
-o	You play the game using “O”s.
-Good luck!
-"""
-print(game_instructions)
+
+def clear_screen():
+    if (os.name == 'posix'):
+        os.system('clear')
+    else:
+        os.system('cls')
+
+
+clear_screen()
+
+
+GAME_INSTRUCTIONS = """
+    Welcome to Tic-Tac-Toe!
+    Here's how you can play the game :
+    o	The game is played on a 3x3 game board.
+    o	The goal of the game is to form a line of three of your own marks
+        horizontally, vertically, or diagonally before the other player.
+    o	You play the game against the computer.
+    o	The computer plays using “X”s.
+    o	You play the game using “O”s.
+    Good luck!
+    """
+
+
+def display_instructions():
+    print(GAME_INSTRUCTIONS)
+
+
+display_instructions()
+
+
+def start_game():
+    while True:
+        print("Type 's' to start game.")
+        start_input = input()
+        if start_input == 's':
+            break
+        else:
+            print("Invalid input. Enter 's' to start the game.")
+    clear_screen()
+
+
+start_game()
+
 
 computer_symbol = "X"
 user_symbol = "O"
