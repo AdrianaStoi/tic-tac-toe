@@ -27,9 +27,7 @@ board = [
 
 
 def generate_board(board):
-    '''
-    Creates the board and displays board number inside the cells.
-    '''
+    '''Creates the board and displays board number inside the cells.'''
     print("\n" + "+-----" * len(board[0]) + "+")
     for row in board:
         print("|     " * 3, "|", sep="")
@@ -43,9 +41,7 @@ generate_board(board)
 
 
 def check_free_cell(board):
-    '''
-    Function that checks if cell is free.
-    '''
+    '''Function that checks if cell is free.'''
     available_cell = []
     for row in range(len(board)):
         for column in range(len(board[row])):
@@ -62,11 +58,8 @@ def computer_move(board):
     checks if cell is available and updates the board.
     '''
     condition = True
-
     while condition:
-
         computer_choice = random.randint(1, 9)
-
         computer_position_board = []
         for row in range(len(board)):
             for col in range(len(board[row])):
@@ -76,26 +69,23 @@ def computer_move(board):
             print(f"Cell {computer_choice} is already filled in,", end=" ")
             print("enter a different number.")
             continue
-
         else:
             print("Computer's move:", computer_choice)
         row, col = computer_position_board
         board[row][col] = "X"
         generate_board(board)
         condition = False
-
     return check_win(board, computer_symbol, user_symbol)
 
 
 def user_move(board):
     '''
-    Function that asks user about their move,
-    checks the validity of user input,
+    Function that asks user about their move.
+    While loop, while true checks the validity of user input,
     checks if cell is available and updates the board.
     '''
     print("*** Your turn ***")
     condition = True
-
     while condition:
         try:
             print("Enter your move", end=" ")
@@ -104,17 +94,14 @@ def user_move(board):
         except ValueError:
             print("You must enter a number between 1 and 9!")
             continue
-
         if user_input not in range(1, 10):
             print("Invalid input. Enter a number between 1 and 9.")
             continue
-
         user_position_board = []
         for row in range(len(board)):
             for col in range(len(board[row])):
                 if board[row][col] == user_input:
                     user_position_board = (row, col)
-
         if user_position_board not in check_free_cell(board):
             print(f"Cell {user_input} is already filled in,", end=" ")
             print("enter a different number.")
@@ -123,34 +110,34 @@ def user_move(board):
         board[row][col] = "O"
         generate_board(board)
         condition = False
-
     return check_win(board, computer_symbol, user_symbol)
 
 
 def check_win(board, computer_symbol, user_symbol):
     '''
     Function that checks for winner on rows, columns and diagonals.
-    If there is no winner and no cells available then winner is "Tie".
+    For loop with if statements checks winner on row and columns.
+    Following 2 if statements outside loop checks winner on diagonals
+    Last if statement, if there is no winner and no cells available,
+    then winner is "Tie".
     '''
     winner = None
-
-    # Check the winner on rows and columns
     for i in range(3):
-        if (board[i][0] == board[i][1] == board[i][2]) and (board[i][0] in [computer_symbol, user_symbol]):  # noqa
-            winner = board[i][0]
-        if (board[0][i] == board[1][i] == board[2][i]) and (board[0][i] in [computer_symbol, user_symbol]):  # noqa
-            winner = board[0][i]
+        if (board[i][0] == board[i][1] == board[i][2]):
+            if (board[i][0] in [computer_symbol, user_symbol]):
+                winner = board[i][0]
+        if (board[0][i] == board[1][i] == board[2][i]):
+            if (board[0][i] in [computer_symbol, user_symbol]):
+                winner = board[0][i]
+    if (board[0][0] == board[1][1] == board[2][2]):
+        if (board[0][0] in [computer_symbol, user_symbol]):
+            winner = board[0][0]
+    if (board[0][2] == board[1][1] == board[2][0]):
+        if (board[0][2] in computer_symbol, user_symbol):
+            winner = board[0][2]
 
-    # Check the winner on diagonals
-    if (board[0][0] == board[1][1] == board[2][2]) and (board[0][0] in [computer_symbol, user_symbol]):  # noqa
-        winner = board[0][0]
-    if (board[0][2] == board[1][1] == board[2][0]) and (board[0][2] in computer_symbol, user_symbol):  # noqa
-        winner = board[0][2]
-
-    # Check for tie if there is no winner and if all cells are filled in.
     if not winner and not check_free_cell(board):
         winner = "Tie"
-
     return winner
 
 
