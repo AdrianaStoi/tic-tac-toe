@@ -45,7 +45,6 @@ def start_game():
     or 'q' to quit the game.
     It checks data validity, otherwise error message received.
     '''
-
     while True:
         print()
         start_input = input("Type 's' to start game or 'q' to quit the game:")
