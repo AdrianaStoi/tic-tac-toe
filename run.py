@@ -52,7 +52,7 @@ def start_game():
         if start_input == 's':
             break
         elif start_input == 'q':
-            print("Quitting game.")
+            print("Quitting game. Click on 'Run Program' to play the game.")
             quit_game()
             break
         else:
@@ -178,7 +178,7 @@ def check_win(board, computer_symbol, user_symbol):
 
 
 def main():
-    '''Function that initiates the program"s execution.'''
+    '''Function that initiates the program's execution.'''
     clear_screen()
     display_instructions()
     start_game()
