@@ -26,6 +26,12 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * As a user, I would like to see a message displayed, if I enter wrong character.
 * As a user, I would like to know how to restart game when it is ended.
 
+## Flowchart
+
+* In order to create and plan the game structure, I used Lucidchart to create a flowchart :
+
+![Lucidchart Flowchart-Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/flowchart_tic_tac_toe.png)
+
 ## Features
 
 ### Existing Features
@@ -116,9 +122,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ## Technology
 
-* I used [Lucidchart](https://www.lucidchart.com/pages/) Flowcharts to create and plan the game structure. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowcharts_tic_tac_toe.pdf).
-
-![Lucid Flowchart-Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/flowchart_tic_tac_toe.png)
+* I used [Lucidchart](https://www.lucidchart.com/pages/) Flowcharts to create and plan the game structure. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowchart_tic_tac_toe.pdf).
 
 * I used the editor Codeanywhere for coding. I used Code Institute template. Skillset used for the project was Python. 
 * The game was deployed to Heroku and deployment history was maintained through Git commit messages.
@@ -144,7 +148,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 | Input a move into a cell already occupied - user or computer  | When user or computer chooses a number in a cell that is already filled in, an error message should be displayed: “Cell (user or computer input) is already filled in, enter a different number.” | Type number in the range 1-9 | When the user or computer chooses a number in a cell that is already filled in, an error message is displayed:  “Cell (user or computer input) is already filled in, enter a different number.” ![Cell already filled-user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/cell_already_filled_in.png) ![Cell already filled-computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/cell_already_filled_in_computer.png)|
 | Winner on rows  | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three rows, a message should be printed with the corresponding message: “Computer won!” or “You won!” | Either ‘X’ or ‘O’ forms a line in any of the three rows | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three rows, a message is printed with the corresponding message: “Computer won!” or “You won!” ![winner computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_computer.png) |
 | Winner on columns | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three columns, a message should be printed with the corresponding message: “Computer won!” or “You won!” | Either ‘X’ or ‘O’ forms a line in any of the three columns | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three columns, a message is printed with the corresponding message: “Computer won!” or “You won!” ![winner user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_user.png)  ![winner user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_column_middle_user.png) |
-| Winner on diagonals  | TWhen either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message should be printed with the corresponding message: “Computer won!” or “You won!” | Either ‘X’ or ‘O’ forms a line in any of the two diagonals| When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message is printed with the corresponding message: “Computer won!” or “You won!” ![winner diagonal user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_diagonal_user.png)  ![winner diagonal computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_on_diagonal_computer.png)|
+| Winner on diagonals  | TWhen either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message should be printed with the corresponding message: “Computer won!” or “You won!” | Either ‘X’ or ‘O’ forms a line in any of the two diagonals| When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message is printed with the corresponding message: “Computer won!” or “You won!” ![winner diagonal user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_diagonal_user.png)  ![winner diagonal computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_diagonal_computer.png)|
 | Tie  | If all cells are filled in with ‘X’ and ‘O’ and there is no line formed, then it is a tie. The message : "It's a tie. Play again by clicking on 'Run Program'." it is displayed. | All cells are filled in with ‘X’ and ‘O’ without forming a line. | Once all cells are filled in with ‘X’ and ‘O’ and there is no line formed, then it is a tie. The message: "It's a tie. Play again by clicking on 'Run Program'." it is displayed. ![Tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_tie.png)|
 
 ### User Story Testing
@@ -215,13 +219,15 @@ To deploy the project on Heroku the following steps were followed:
 * Once is deployed there is a message displayed “Your app was successfully deployed.” And a button “View” 
 * Click on “View” and you are directed to the app deployed and the link
 
+Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.com/
+
 ## Credits
 
-* For the game description I used as source [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
+* For the game description I used as source [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe).
 * I used [Code Institute - Template](https://github.com/Code-Institute-Org/python-essentials-template) for the deployable application.
-* For Flowchart creation I used [Lucidchart](https://www.lucidchart.com/)
+* For Flowchart creation I used [Lucidchart](https://www.lucidchart.com/).
 * To create generate board function, I used  as source the blog article of [Helya Aquobi](https://helyaaqoubi.gitlab.io/coding/2020/05/12/tic-tac-toe-coding.html)
 which was customized and I adapted it accordingly.
 * I created the check for win function by following [Stackflow thread](https://stackoverflow.com/questions/74379382/cs50-ai-tic-tac-toe-player-x-has-3-in-a-row-yet-doesnt-win-o-picks-next-a-3) and project of [Pam Qian](https://gist.github.com/qianguigui1104/edb3b11b33c78e5894aad7908c773353) which were used as guidance. I customized and adapted the function accordingly.
-* To create the clear()function, to facilitate UX experience and clear screen, I used as source the  thread on [slack](https://app.slack.com/client/T0L30B202/C027C3S3TEU/thread/C027C3S3TEU-1646215428.957489) and the code to create function was taken from the [blog article on Scaler](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
-* To create quit game function I used code from [Freecodecamp](https://www.freecodecamp.org/news/python-exit-how-to-use-an-exit-function-in-python-to-stop-a-program/)
+* To create the clear()function, to facilitate UX experience and clear screen, I used as source the  thread on [slack](https://app.slack.com/client/T0L30B202/C027C3S3TEU/thread/C027C3S3TEU-1646215428.957489) and the code to create function was taken from the [blog article on Scaler](https://www.scaler.com/topics/how-to-clear-screen-in-python/).
+* To create quit game function I used code from [Freecodecamp](https://www.freecodecamp.org/news/python-exit-how-to-use-an-exit-function-in-python-to-stop-a-program/).
