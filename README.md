@@ -10,8 +10,9 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ![Responsive](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/tic_tac_toe_responsive.png)
 
-## Table of contents
 ---
+
+## Table of contents
 
 - [The goal of the site owner](#the-goal-of-the-site-owner)
 - [The goal of the external owner](#the-goal-of-the-external-user)
@@ -89,8 +90,9 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
     * Typing 's' 
 
         * If the user types '_s_' the screen is cleared, the game rules are removed. 
-        * However, the user is again informed about the symbols assigned. The computer has the “X” symbol assigned and the user gets the “O” symbol assigned.
-        * Then the computer will add the first random move within the range 1-9, and the board is updated, as per the screenshot below. 
+        * The user is again informed about the symbols assigned. The computer has the “X” symbol assigned and the user gets the “O” symbol assigned.
+        * The computer will add the first random move within the range 1-9, and the board is updated.
+        * At the bottom of the game board the user is asked “_Enter your move (only numbers between 1-9 accepted):_”, as per the screenshot below:
 
     ![Start game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/type_s.png)
 
@@ -100,17 +102,13 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
     ![Quit game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/type_q.png)
 
-* At the bottom of the game board the user is asked “_Enter your move (only numbers between 1-9 accepted):_”
-
-![User move](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/user_turn_message.png)
-
 * The board is being updated with each valid move. The user can see on the board the options available.
 
 ![Updated board](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/board_updated.png)
 
 #### Invalid input
 
-* If the user enters any invalid data when he is asked "_Type either ‘s’ to start the game or ‘q’ to quit the game._", they will be prompted with a message “_Invalid input.Enter 's' to start the game or 'q' to quit._"
+* If the user enters any invalid data when he is asked "_Type either ‘s’ to start the game or ‘q’ to quit the game._", they will be prompted with a message “_Invalid input.Enter 's' to start the game or 'q' to quit._" until they enter a valid data. 
 
 ![Invalid input when starting or quitting game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_start_quit.png)
 
@@ -146,7 +144,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ##### Tie
 
-* When it’s a tie meaning all squares on the grid are filled and no player has formed a winning line, the user will see the message: “_It’s a tie! Play again by clicking on ‘Run Program.’_”:
+* When it’s a tie, meaning all squares on the grid are filled and no player has formed a winning line, the user will see the message: “_It’s a tie! Play again by clicking on ‘Run Program.’_”:
 
 ![Tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_tie.png)
 
@@ -160,8 +158,9 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 [Back to table of contents](#table-of-contents)
 
-## Technology
 ---
+
+## Technology
 
 * I used [Lucidchart](https://www.lucidchart.com/pages/) Flowcharts to create and plan the game structure. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowchart_tic_tac_toe.pdf).
 
@@ -170,8 +169,9 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 [Back to table of contents](#table-of-contents)
 
-## Testing
 ---
+
+## Testing
 
 ### Manual Testing
 
@@ -180,29 +180,29 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 |     Feature       |        Expectation          |        Action        |       Outcome      |
 | ----------------- | --------------------------- | -------------------- | ------------------ |
 | Run Program button| When clicking on Run Program the game should restart.| Click | When clicking on Run Program the game restarts. ![Run program](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/run_program_button.png)|
-| Display game rules  | When the app page is loaded the game rules should be displayed.| Should be displayed when clicking on Run Program.| When the app page is loaded the game rules are displayed. ![Game instructions](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/game_instructions.png)|
+| Display game rules  | When the app page is loaded, the game rules should be displayed.| Should be displayed when clicking on Run Program.| When the app page is loaded, the game rules are displayed. ![Game instructions](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/game_instructions.png)|
 | Start or quit game feature | When the app page is loaded, underneath the game rules, the user should be prompted to :"_Type 's' to start game or 'q' to quit the game:_"| Function should be called out at the beginning. The text should be displayed when clicking on Run Program.| When the app page is loaded the game rules are displayed and underneath the user can see : "_Type 's' to start game or 'q' to quit the game:_" ![Game instructions](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/game_instructions.png)|
 | Start feature – User enters valid data  | When the user types ‘s’, the program should continue to run, and the user should be asked to enter a number between 1-9.| Type valid data ‘s’ | When the user types ‘s’, the program continues to run, and the user is asked to enter a number between 1-9. ![Start game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/type_s.png)|
 | Quit game Feature – User enters valid data | When the user types ‘q’, the user should be prompted with message "_Quitting game. Click on 'Run Program' to restart the game._"| Type valid data ‘q’ | When the user types ‘q’, the user is prompted with the message: "_Quitting game. Click on 'Run Program' to restart the game._"![Quit game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/type_q.png)|
-| Start or quit game feature – invalid data  | When the user enters any invalid data, e.g. other letters, special characters, any numbers, the error message should be displayed until they enter a valid input:  "_Invalid input. Enter 's' to start the game or 'q' to quit._" | Type invalid data | When the user enters any invalid data, e.g. other letters, special characters, any numbers, they are prompted with the error message until they enter a valid input: "_Invalid input. Enter 's' to start the game or 'q' to quit._" ![Invalid input when starting or quitting game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_start_quit.png)|
+| Start or quit game feature – invalid data  | When the user enters any invalid data, _e.g. other letters, special characters, any numbers_, the error message should be displayed until they enter a valid input:  "_Invalid input. Enter 's' to start the game or 'q' to quit._" | Type invalid data | When the user enters any invalid data, _e.g. other letters, special characters, any numbers_, they are prompted with the error message until they enter a valid input: "_Invalid input. Enter 's' to start the game or 'q' to quit._" ![Invalid input when starting or quitting game](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_start_quit.png)|
 | Computer’s turn  | After the user enters ‘s’ to start the game, the computer should execute its initial random move by selecting a number between 1-9. This move should subsequently update the game board.  | Once user enters valid data to start game ‘s’, computer should make a random move within the range 1-9.| Once the user enters ‘s’ to initiate the game, the computer executes its initial random move by selecting a number between 1-9 and the board game is updated accordingly. ![Game instructions](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/game_instructions.png) |
 | User’s turn – valid data  | Once the computer executes the move, the message "_Enter your move, (only numbers between 1-9 accepted:)_" should be displayed. If the user inputs valid data, the board should be updated, followed by the computer’s turn.| After the computer’s turn, the user should be prompted to enter valid data. Type number between 1-9| When the computer executes the move, the message "_Enter your move,(only numbers between 1-9 accepted:)_" is being displayed. When the user inputs valid data, the board is updated, followed by the computer’s turn. ![User move](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/user_turn_message.png)|
-| User’s turn – any invalid data type | When the user enters any invalid data, when trying to make a move, e.g.  integers greater than 9 and less than 1, they should be prompted with a message “_Invalid input. Enter a number between 1-9._” When the user enters other invalid data,  letters, other characters, floats, they should be prompted with the message. “_You must enter a number between 1-9!_” and then to be asked to enter the move.| Type invalid data. Number outside the range 1-9 or any other character, letter. | When the user enters any invalid data, when trying to make a move, e.g.  integers greater than 9 and less than 1, they are prompted with a message “_Invalid input. Enter a number between 1-9._” When the user enters other invalid data,  letters, other characters, floats, they are prompted with the message. “_You must enter a number between 1-9!_” and then they are asked to enter the move.![Invalid input - characters](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_characters.png) ![Invalid input - letters](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_letters.png) ![Invalid input - floats](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_floats.png) |
+| User’s turn – any invalid data type | When the user enters any invalid data, when trying to make a move, _e.g. integers greater than 9 and less than 1_, they should be prompted with a message “_Invalid input. Enter a number between 1-9._” When the user enters other invalid data,  letters, other characters, floats, they should be prompted with the message. “_You must enter a number between 1-9!_” and then to be asked to enter the move.| Type invalid data. Number outside the range 1-9 or any other character, letter. | When the user enters any invalid data, when trying to make a move, _e.g. integers greater than 9 and less than 1_, they are prompted with a message “_Invalid input. Enter a number between 1-9._” ![Invalid input for number lesser than 1 and greater than 9](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input.png) When the user enters other invalid data,  letters, other characters, floats, they are prompted with the message. “_You must enter a number between 1-9!_” and then they are asked to enter the move.![Invalid input - characters](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_characters.png) ![Invalid input - letters](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_letters.png) ![Invalid input - floats](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/invalid_input_floats.png) |
 | Input a move into a cell already occupied - user or computer  | When user or computer chooses a number in a cell that is already filled in, an error message should be displayed: “_Cell (user or computer input) is already filled in, enter a different number._” | Type number in the range 1-9 | When the user or computer chooses a number in a cell that is already filled in, an error message is displayed:  “_Cell (user or computer input) is already filled in, enter a different number._” ![Cell already filled-user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/cell_already_filled_in.png) ![Cell already filled-computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/cell_already_filled_in_computer.png)|
-| Winner on rows  | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three rows, a message should be printed with the corresponding message: “_Computer won!_” or “_You won!_” | Either ‘X’ or ‘O’ forms a line in any of the three rows | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three rows, a message is printed with the corresponding message: “_Computer won!_” or “_You won!_” ![winner computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_computer.png) |
-| Winner on columns | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three columns, a message should be printed with the corresponding message: “_Computer won!_” or “_You won!_” | Either ‘X’ or ‘O’ forms a line in any of the three columns | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three columns, a message is printed with the corresponding message: “_Computer won!_” or “_You won!_” ![winner user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_user.png)  ![winner user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_column_middle_user.png) |
-| Winner on diagonals  | TWhen either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message should be printed with the corresponding message: “_Computer won!_” or “_You won!_” | Either ‘X’ or ‘O’ forms a line in any of the two diagonals| When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message is printed with the corresponding message: “_Computer won!_” or “_You won!_” ![winner diagonal user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_diagonal_user.png)  ![winner diagonal computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_diagonal_computer.png)|
+| Winner on rows  | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three rows, a message should be printed with the corresponding message: “_Computer won!Play again by clicking on 'Run Program.'_” or “_You won!Play again by clicking on 'Run Program'._” | Either ‘X’ or ‘O’ forms a line in any of the three rows | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three rows, a message is printed with the corresponding message: “_Computer won!Play again by clicking on 'Run Program'._” or “_You won!Play again by clicking on 'Run Program'._” ![winner computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_computer.png) |
+| Winner on columns | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three columns, a message should be printed with the corresponding message: “_Computer won!Play again by clicking on 'Run Program'._” or “_You won!Play again by clicking on 'Run Program'._” | Either ‘X’ or ‘O’ forms a line in any of the three columns | When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the three columns, a message is printed with the corresponding message: “_Computer won!_” or “_You won!_” ![winner user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_user.png)  ![winner user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_column_middle_user.png) |
+| Winner on diagonals  | TWhen either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message should be printed with the corresponding message: “_Computer won!Play again by clicking on 'Run Program'._” or “_You won!Play again by clicking on 'Run Program'._” | Either ‘X’ or ‘O’ forms a line in any of the two diagonals| When either symbol ‘X’ (computer) or ‘O’ (user) forms a line on any of the two diagonals, a message is printed with the corresponding message: “_Computer won!Play again by clicking on 'Run Program'._” or “_You won!Play again by clicking on 'Run Program'._” ![winner diagonal user](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_diagonal_user.png)  ![winner diagonal computer](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/winner_on_diagonal_computer.png)|
 | Tie  | If all cells are filled in with ‘X’ and ‘O’ and there is no line formed, then it is a tie. The message : "_It's a tie. Play again by clicking on 'Run Program'._" it is displayed. | All cells are filled in with ‘X’ and ‘O’ without forming a line. | Once all cells are filled in with ‘X’ and ‘O’ and there is no line formed, then it is a tie. The message: "_It's a tie. Play again by clicking on 'Run Program'._" it is displayed. ![Tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/winner_tie.png)|
 
 ### User Story Testing
 
 |                User Story                            |                                            Testing                                                         |
 |------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|As a user, I would like to know the rules of the game.| <ul><li>The game rules are displayed in the terminal, when the user clicks on the Heroku app link or when he clicks on “_Run Program_”.</li></ul>|
-|As user, I would like to be able to start or quit the game.| <ul><li>After the game rules, the user is being asked to type either ‘s’ to start the game or ‘q’ to quit the game.</li></ul>|
-|As a user, I would like to view updated board and see the available moves.| <ul><li>The game board is updated after each user and computer move. The board is displayed in the terminal. The numbers from 1-9 are displayed. When the user or computer enters a move the numbers are replaced with “X” and “O”.</li></ul>|
-|As a user, I would like to see a message displayed, if I enter wrong character.| <ul><li>The user is prompted with a message every time they enter an invalid input, e.g. letters, special characters, integers less than 1 or greater than 9.</li></ul>|
-|As a user, I would like to know how to restart game when it is ended.| <ul><li>When the game ends, meaning the user wins, computer or when is a tie, the user is prompted with the message: “_Play again by clicking on ‘Run Program.'_”</li></ul>|
+|As a user, I would like to know the rules of the game.| <ul><li>The game rules are displayed in the terminal, when you click on the Heroku app link or when you click on “_Run Program_”.</li></ul>|
+|As user, I would like to be able to start or quit the game.| <ul><li>After the game rules, you are being asked to type either ‘s’ to start the game or ‘q’ to quit the game.If you enter invalid data, you receive an error message until you enter the requested valid data.</li></ul>|
+|As a user, I would like to view updated board and see the available moves.| <ul><li>The game board is updated after each user and computer move. The board is displayed in the terminal. The numbers from 1-9 are displayed. When you or computer enters a move the numbers are replaced with “X” and “O”.</li></ul>|
+|As a user, I would like to see a message displayed, if I enter wrong character.| <ul><li>You are prompted with a message every time you enter an invalid input, _e.g. letters, special characters, integers less than 1 or greater than 9_.</li></ul>|
+|As a user, I would like to know how to restart game when it is ended.| <ul><li>When the game ends, meaning you win, computer wins or when is a tie, you are prompted with the message: “_Play again by clicking on ‘Run Program.'_”</li></ul>|
 
 ### Fixed Bugs
 
@@ -211,7 +211,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ![Bug asking for user input only once](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_asking_for_user_input_only_once.png)  ![Fixed bug indentation of condition false](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/fixed_bug_indentation_of_condition_false.png)
 
-* When it was a tie there were two messages displayed “_It’s a tie_” and “_Computer won_”.
+* When it was a tie, there were two messages displayed: “_It’s a tie_” and “_Computer won_”.
 * Fixed bug by adding an “_if/else_” condition under the while loop when there is a winner, as per below:
 
 ![Bug two messages appear when tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_two_messages_appear_when_tie.png)  ![Solved bug tie one message displayed](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/solved_bug_tie_one_message_displayed.png)
@@ -225,14 +225,15 @@ I am not aware of any remaining unresolved bugs.
 
 ### Code validation
 
-* The run.py file successfully passed through the [PEP8 CI](https://pep8ci.herokuapp.com/#) validator without any errors being detected.
+* The _run.py_ file successfully passed through the [PEP8 CI](https://pep8ci.herokuapp.com/#) validator without any errors being detected.
 
 ![PEP8 validator](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/code_validation_tic_tac_toe.png)
 
 [Back to table of contents](#table-of-contents)
 
-## Deployment
 ---
+
+## Deployment
 
 ### Codeanywhere
 
@@ -272,8 +273,9 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 [Back to table of contents](#table-of-contents)
 
-## Credits
 ---
+
+## Credits
 
 * For the game description I used as source [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe).
 * I used [Code Institute - Template](https://github.com/Code-Institute-Org/python-essentials-template) for the deployable application.
