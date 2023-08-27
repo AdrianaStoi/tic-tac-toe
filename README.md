@@ -10,15 +10,51 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ![Responsive](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/tic_tac_toe_responsive.png)
 
-## Site owner's goal:
+## Table of contents
+---
+
+- [Site owner's goal](#site-owners-goal)
+- [External user’s goal](#external-users-goal)
+- [User stories](#user-stories)
+
+- [The goal of the site owner](#the-goal-of-the-site-owner)
+- [The goal of the external owner](#the-goal-of-the-external-user)
+- [Flowchart](#flowchart)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+        - [Run Program](#run-program)
+        - [Invalid input](#invalid-input)
+        - [Winner or Tie](#winner-or-tie)
+            - [Winner computer](#winner-computer)
+            - [Winner user](#winner-user)
+            - [Tie](#tie)
+    - [Future features](#future-features)
+- [Technology](#technology)
+- [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [User Story Testing](#user-story-testing)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Browser Compatibility](#browser-compatibility)
+    - [Code validation](#code-validation)
+- [Deployment](#deployment)
+    - [Codeanywhere](#codeanywhere)
+    - [Heroku](#heroku)
+- [Credits](#credits)
+
+## Site owner's goals
+---
+
+## The goal of the site owner 
 
 * Provide an entertaining and user-friendly game to the user. Create a game that provides good user experience by applying defensive programming.
 
-## External user’s goal:
+## The goal of the external user 
+---
 
 * The user’s goal is to enjoy playing Tic Tac Toe and improve strategic thinking and decision-making skills.
 
-## User stories:
+## User stories
+---
 
 * As user, I would like to be able to start or quit the game. 
 * As a user, I would like to know the rules of the game.
@@ -26,13 +62,19 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * As a user, I would like to see a message displayed, if I enter wrong character.
 * As a user, I would like to know how to restart game when it is ended.
 
+[Back to table of contents](#table-of-contents)
+
 ## Flowchart
+---
 
 * In order to create and plan the game structure, I used Lucidchart to create a flowchart :
 
 ![Lucidchart Flowchart-Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/flowchart_tic_tac_toe.png)
 
+[Back to table of contents](#table-of-contents)
+
 ## Features
+---
 
 ### Existing Features
 
@@ -120,7 +162,10 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * Let the user choose the symbol they want.
 * Keep score tracking for multiple rounds.
 
+[Back to table of contents](#table-of-contents)
+
 ## Technology
+---
 
 * I used [Lucidchart](https://www.lucidchart.com/pages/) Flowcharts to create and plan the game structure. The flowchart can be found [here - Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/flowchart_tic_tac_toe.pdf).
 
@@ -128,11 +173,11 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * The game was deployed to Heroku and deployment history was maintained through Git commit messages.
 
 ## Testing
-
+---
 
 ### Manual Testing
 
-* I have tested all functions and features, confirming their proper functionality as expected. The user will encounter error messages at each step when they input data that differs dein the required input. 
+* I have tested all functions and features, confirming their proper functionality as expected. The user will encounter error messages at each step when they input data that differs from the required input.
 
 |     Feature       |        Expectation          |        Action        |       Outcome      |
 | ----------------- | --------------------------- | -------------------- | ------------------ |
@@ -183,7 +228,10 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 
 ![PEP8 validator](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/code_validation_tic_tac_toe.png)
 
+[Back to table of contents](#table-of-contents)
+
 ## Deployment
+---
 
 ### Codeanywhere
 
@@ -222,6 +270,7 @@ To deploy the project on Heroku the following steps were followed:
 Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.com/
 
 ## Credits
+---
 
 * For the game description I used as source [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe).
 * I used [Code Institute - Template](https://github.com/Code-Institute-Org/python-essentials-template) for the deployable application.
@@ -231,3 +280,5 @@ which was customized and I adapted it accordingly.
 * I created the check for win function by following [Stackflow thread](https://stackoverflow.com/questions/74379382/cs50-ai-tic-tac-toe-player-x-has-3-in-a-row-yet-doesnt-win-o-picks-next-a-3) and project of [Pam Qian](https://gist.github.com/qianguigui1104/edb3b11b33c78e5894aad7908c773353) which were used as guidance. I customized and adapted the function accordingly.
 * To create the clear()function, to facilitate UX experience and clear screen, I used as source the  thread on [slack](https://app.slack.com/client/T0L30B202/C027C3S3TEU/thread/C027C3S3TEU-1646215428.957489) and the code to create function was taken from the [blog article on Scaler](https://www.scaler.com/topics/how-to-clear-screen-in-python/).
 * To create quit game function I used code from [Freecodecamp](https://www.freecodecamp.org/news/python-exit-how-to-use-an-exit-function-in-python-to-stop-a-program/).
+
+[Back to table of contents](#table-of-contents)
