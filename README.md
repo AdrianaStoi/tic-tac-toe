@@ -280,7 +280,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * For the game description I used as source [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe).
 * I used [Code Institute - Template](https://github.com/Code-Institute-Org/python-essentials-template) for the deployable application.
 * For Flowchart creation I used [Lucidchart](https://www.lucidchart.com/).
-* To create generate board function, I used  as source the blog article of [Helya Aquobi](https://helyaaqoubi.gitlab.io/coding/2020/05/12/tic-tac-toe-coding.html)
+* To create generate board function, I used  as source the blog article of [Hamza El Yaaqouobi](https://helyaaqoubi.gitlab.io/coding/2020/05/12/tic-tac-toe-coding.html)
 which was customized and I adapted it accordingly.
 * I created the check for win function by following [Stackflow thread](https://stackoverflow.com/questions/74379382/cs50-ai-tic-tac-toe-player-x-has-3-in-a-row-yet-doesnt-win-o-picks-next-a-3) and project of [Pam Qian](https://gist.github.com/qianguigui1104/edb3b11b33c78e5894aad7908c773353) which were used as guidance. I customized and adapted the function accordingly.
 * To create the clear()function, to facilitate UX experience and clear screen, I used as source the  thread on [slack](https://app.slack.com/client/T0L30B202/C027C3S3TEU/thread/C027C3S3TEU-1646215428.957489) and the code to create function was taken from the [blog article on Scaler](https://www.scaler.com/topics/how-to-clear-screen-in-python/).
