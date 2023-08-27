@@ -4,11 +4,11 @@ import sys
 
 
 def clear_screen():
-    '''
+    """
     Function that clears the screen.
     This code was taken from :
     https://www.scaler.com/topics/how-to-clear-screen-in-python/
-    '''
+    """
     if (os.name == 'posix'):
         os.system('clear')
     else:
@@ -16,7 +16,7 @@ def clear_screen():
 
 
 def quit_game():
-    '''Function that exists the game.'''
+    """Function that exists the game."""
     sys.exit(0)
 
 
@@ -35,16 +35,16 @@ Good luck!
 
 
 def display_instructions():
-    '''Function that prints the game instructions.'''
+    """Function that prints the game instructions."""
     print(GAME_INSTRUCTIONS)
 
 
 def start_game():
-    '''
+    """
     Function that prompts the user to type 's' to start the game
     or 'q' to quit the game.
     It checks data validity, otherwise error message received.
-    '''
+    """
     while True:
         print()
         start_input = input("Type 's' to start game or 'q' to quit the game:")
@@ -65,7 +65,7 @@ symbols = computer_symbol, user_symbol
 
 
 def generate_board(board):
-    '''Creates the board and displays board number inside the cells.'''
+    """Creates the board and displays board number inside the cells."""
     print("\n" + "+-----" * len(board[0]) + "+")
     for row in board:
         print("|     " * 3, "|", sep="")
@@ -76,7 +76,7 @@ def generate_board(board):
 
 
 def check_free_cell(board):
-    '''Function that checks if cell is free.'''
+    """Function that checks if cell is free."""
     available_cell = []
     for row in range(len(board)):
         for column in range(len(board[row])):
@@ -87,11 +87,11 @@ def check_free_cell(board):
 
 
 def computer_move(board):
-    '''
+    """
     Adds computer random choice between 1 and 9,
     checks the validity of computer input,
     checks if cell is available and updates the board.
-    '''
+    """
     print()
     print("*** Computer's turn ***")
     condition = True
@@ -116,11 +116,11 @@ def computer_move(board):
 
 
 def user_move(board):
-    '''
+    """
     Function that asks user about their move.
     While loop, while true checks the validity of user input,
     checks if cell is available and updates the board.
-    '''
+    """
     print("*** Your turn ***")
     condition = True
     while condition:
@@ -151,13 +151,13 @@ def user_move(board):
 
 
 def check_win(board, computer_symbol, user_symbol):
-    '''
+    """
     Function that checks for winner on rows, columns and diagonals.
     For loop with if statements checks winner on row and columns.
     The following 2 if statements outside loop checks winner on diagonals
     Last if statement, if there is no winner and no cells available,
     then winner is "Tie".
-    '''
+    """
     winner = None
     for i in range(3):
         if (board[i][0] == board[i][1] == board[i][2]):
@@ -179,7 +179,7 @@ def check_win(board, computer_symbol, user_symbol):
 
 
 def main():
-    '''Function that initiates the program's execution.'''
+    """Function that initiates the program's execution."""
     clear_screen()
     display_instructions()
     start_game()
@@ -191,13 +191,13 @@ def main():
         [7, 8, 9],
     ]
     while True:
-        '''
+        """
         The loop will break when the winner is determined.
         It alternates between the computer_move and user_move
         and checks for the winner or tie after each move.
         Appropriate message is printed if the computer, user is the winner
         or it's tie.
-        '''
+        """
         winner = computer_move(board)
         if winner:
             if winner == "Tie":

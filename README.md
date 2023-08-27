@@ -13,12 +13,9 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 ## Table of contents
 ---
 
-- [Site owner's goal](#site-owners-goal)
-- [External user’s goal](#external-users-goal)
-- [User stories](#user-stories)
-
 - [The goal of the site owner](#the-goal-of-the-site-owner)
 - [The goal of the external owner](#the-goal-of-the-external-user)
+- [User stories](#user-stories)
 - [Flowchart](#flowchart)
 - [Features](#features)
     - [Existing Features](#existing-features)
@@ -34,6 +31,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
     - [Manual Testing](#manual-testing)
     - [User Story Testing](#user-story-testing)
     - [Fixed Bugs](#fixed-bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
     - [Browser Compatibility](#browser-compatibility)
     - [Code validation](#code-validation)
 - [Deployment](#deployment)
@@ -41,10 +39,8 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
     - [Heroku](#heroku)
 - [Credits](#credits)
 
-## Site owner's goals
----
-
 ## The goal of the site owner 
+---
 
 * Provide an entertaining and user-friendly game to the user. Create a game that provides good user experience by applying defensive programming.
 
@@ -67,7 +63,7 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 ## Flowchart
 ---
 
-* In order to create and plan the game structure, I used Lucidchart to create a flowchart :
+* In order to create and plan the game structure, I used [Lucidchart](https://www.lucidchart.com/pages/) to create a flowchart :
 
 ![Lucidchart Flowchart-Tic-Tac-Toe](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagesreadme/flowchart_tic_tac_toe.png)
 
@@ -172,6 +168,8 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * I used the editor Codeanywhere for coding. I used Code Institute template. Skillset used for the project was Python. 
 * The game was deployed to Heroku and deployment history was maintained through Git commit messages.
 
+[Back to table of contents](#table-of-contents)
+
 ## Testing
 ---
 
@@ -217,6 +215,9 @@ Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.co
 * Fixed bug by adding an “if/else” condition under the while loop when there is a winner, as per below:
 
 ![Bug two messages appear when tie](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/bug_two_messages_appear_when_tie.png)  ![Solved bug tie one message displayed](https://github.com/AdrianaStoi/tic-tac-toe/blob/main/documentation/imagestesting/solved_bug_tie_one_message_displayed.png)
+
+### Unfixed Bugs
+I am not aware of any remaining unresolved bugs.
 
 ### Browser Compatibility
 
@@ -268,6 +269,8 @@ To deploy the project on Heroku the following steps were followed:
 * Click on “View” and you are directed to the app deployed and the link
 
 Visit deployed game here : https://my-tic-tac-toe-game-9cab97b48353.herokuapp.com/
+
+[Back to table of contents](#table-of-contents)
 
 ## Credits
 ---
